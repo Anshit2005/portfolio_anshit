@@ -13,17 +13,21 @@ const Navbar = () => {
   const menuRef = useRef();
 
   const openMenu = () => {
+  if (window.innerWidth <= 480) {
     setIsMenuOpen(true);
     menuRef.current.style.position = "absolute";
     menuRef.current.style.top = "0";
     menuRef.current.style.right = "0";
-  };
+  }
+};
 
-  const closeMenu = () => {
+const closeMenu = () => {
+  if (window.innerWidth <= 480) {
     setIsMenuOpen(false);
     menuRef.current.style.position = "absolute";
     menuRef.current.style.right = "-350px";
-  };
+  }
+};
 
   return (
     <>
