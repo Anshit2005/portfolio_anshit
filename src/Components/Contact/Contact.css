@@ -1,0 +1,120 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 60px 127.5px;
+}
+
+.contact-title {
+    position: relative;
+}
+
+.contact-title h1 {
+    padding: 0px 22.5px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.contact-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.contact-section {
+    display: flex;
+    gap: 112.5px;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 22.5px;
+}
+
+.contact-left h1 {
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908 80%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+    max-width: 412.5px;
+    color: #D8D8D8;
+    font-size: 15px;
+    line-height: 26.25px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 22.5px;
+    color: #D8D8D8;
+    font-size: 16.5px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 22.5px;
+}
+
+.contact-right label {
+    font-size: 16.5px;
+    color: #D8D8D8;
+    font-weight: 500;
+}
+
+.contact-right input {
+    border: none;
+    width: 525px;
+    height: 58.5px;
+    padding-left: 15px;
+    border-radius: 3px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-family: Outfit;
+    font-size: 15px;
+}
+
+.contact-right textarea {
+    border: none;
+    width: 505px;
+    height: 80px;
+    padding: 20px;
+    border-radius: 3px;
+    background: #32323c;
+    color: #A0A0A0;
+    font-family: Outfit;
+    font-size: 15px;
+}
+
+.contact-submit {
+    border: none;
+    color: white;
+    border-radius: 37.5px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    padding: 15px 45px;
+    font-size: 16.5px;
+    margin-bottom: 37.5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-submit:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}

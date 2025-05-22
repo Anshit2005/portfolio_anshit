@@ -1,0 +1,251 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin: 60px 127.5px;
+  padding: 20px;
+}
+
+.about-title {
+  position: relative;
+}
+
+.about-title h1 {
+  padding: 0px 22.5px;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.about-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.about-sections {
+  display: flex;
+  gap: 40px;
+}
+
+.about-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-left img {
+  border-radius: 15%;
+  width: 300px;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #d4d4d4;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.about-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1.2rem;
+  padding: 1.5rem;
+  justify-items: center;
+}
+
+/* Parent container for perspective */
+.parent {
+  width: 300px; /* Keep card container width fixed */
+  padding: 20px;
+  perspective: 1000px; /* Needed for 3D */
+}
+
+/* Card container */
+.card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 85px;
+  background-color: rgba(255, 255, 255, 0.05); /* light transparent white */
+  border-radius: 12px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(142, 142, 142, 0.15) 0px 15px 25px -10px;
+}
+
+/* Hover 3D rotation */
+.card:hover {
+  transform: rotate3d(0.5, 1, 0, 30deg) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Image inside card */
+.card img {
+  width: 60%;
+  height: auto;
+  transition: opacity 0.3s ease;
+  object-fit: contain;
+  z-index: 3;
+  transform-style: preserve-3d;
+}
+
+/* On hover, fade out the image */
+.card:hover img {
+  opacity: 0;
+}
+
+/* Skill name text overlay */
+.card span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 900;
+  font-size: 0.75rem;
+  opacity: 0;
+  z-index: 4;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 12px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform-style: preserve-3d;
+  transform: translateZ(30px);
+}
+
+.card:hover span {
+  opacity: 1;
+  transform: translateZ(60px);
+}
+
+/* Layered text effect (like content-box) */
+.content-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  pointer-events: none; /* So that hover stays on card */
+}
+
+/* Example: layered card title inside content box */
+.content-box .card-title {
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  transform: translateZ(40px);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Layered card description */
+.content-box .card-content {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 10px;
+  font-weight: 600;
+  transform: translateZ(20px);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* On card hover, push text layers closer */
+.card:hover .content-box .card-title {
+  transform: translateZ(80px);
+}
+
+.card:hover .content-box .card-content {
+  transform: translateZ(60px);
+}
+
+/* === Responsive Styles === */
+
+@media (max-width: 1024px) {
+  .about {
+    margin: 40px 60px;
+  }
+  .about-title h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin: 30px 30px;
+    padding: 10px;
+  }
+  .about-title h1 {
+    font-size: 36px;
+  }
+  .about-sections {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .about-left img {
+    width: 250px;
+  }
+  .about-para {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .about-skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    padding: 1rem;
+  }
+  .card {
+    max-width: 70px;
+  }
+  .card img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    margin: 20px 15px;
+  }
+  .about-title h1 {
+    font-size: 28px;
+  }
+  .about-left img {
+    width: 200px;
+  }
+  .about-para {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .about-skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    padding: 0.5rem;
+  }
+  .card {
+    max-width: 60px;
+  }
+  .card img {
+    width: 40%;
+  }
+}
