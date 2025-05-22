@@ -2,12 +2,16 @@ import React from 'react';
 import './Projects.css';
 import Projects_Data from '../../assets/projects_data';
 
+// Importing images properly
+import themePattern from '../../assets/theme_pattern.svg';
+import arrowIcon from '../../assets/arrow_icon.svg';
+
 const Projects = () => {
   return (
-    <div id ='projects' className='projects'>
+    <div id='projects' className='projects'>
       <div className="projects-title">
         <h1>My Projects</h1>
-        <img src="src/assets/theme_pattern.svg" alt="" />
+        <img src={themePattern} alt="theme pattern" />
       </div>
       <div className="projects-container">
         {Projects_Data.map((project, index) => {
@@ -23,7 +27,7 @@ const Projects = () => {
                 className="projects-readmore"
               >
                 <p>Read More</p>
-                <img src="src/assets/arrow_icon.svg" alt="arrow" />
+                <img src={arrowIcon} alt="arrow" />
               </a>
             </div>
           );

@@ -1,44 +1,48 @@
 import React, { useState } from "react";
 import "./Contact.css";
 
+// Import images
+import themePattern from "../../assets/theme_pattern.svg";
+import mailIcon from "../../assets/mail_icon.svg";
+import locationIcon from "../../assets/location_icon.svg";
+
 const Contact = () => {
   const [messageSent, setMessageSent] = useState(false);
 
   const onSubmit = async (event) => {
-  event.preventDefault(); // stops default form submission
+    event.preventDefault();
 
-  try {
-    const formData = new FormData(event.target);
-    formData.append("access_key", "cd1aa3e9-a4c6-4c47-9499-ad5379b2a826");
+    try {
+      const formData = new FormData(event.target);
+      formData.append("access_key", "cd1aa3e9-a4c6-4c47-9499-ad5379b2a826");
 
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
 
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: json
-    }).then((res) => res.json());
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+      }).then((res) => res.json());
 
-    if (res.success) {
-      console.log("Success", res);
-      setMessageSent(true);
-      event.target.reset();
+      if (res.success) {
+        console.log("Success", res);
+        setMessageSent(true);
+        event.target.reset();
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
     }
-  } catch (error) {
-    console.error("Form submission error:", error);
-  }
-};
-
+  };
 
   return (
     <div id="contact" className="contact">
       <div className="contact-title">
         <h1>Get in touch</h1>
-        <img src="src\assets\theme_pattern.svg" alt="" />
+        <img src={themePattern} alt="Theme Pattern" />
       </div>
       <div className="contact-section">
         <div className="contact-left">
@@ -48,11 +52,11 @@ const Contact = () => {
           </p>
           <div className="contact-details">
             <div className="contact-detail">
-              <img src="src\assets\mail_icon.svg" alt="" />
+              <img src={mailIcon} alt="Mail Icon" />
               <p>anshitagarwal1087@gmail.com</p>
             </div>
             <div className="contact-detail">
-              <img src="src\assets\location_icon.svg" alt="" />
+              <img src={locationIcon} alt="Location Icon" />
               <p>New Delhi, India</p>
             </div>
           </div>

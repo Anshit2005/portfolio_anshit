@@ -1,16 +1,33 @@
 import React from "react";
 import "./About.css";
 
+// Importing all images
+import themePattern from "../../assets/theme_pattern.svg";
+import aboutPic from "../../assets/about-pic.png";
+
+import pythonLogo from "../../assets/skills/python_logo.svg";
+import jsLogo from "../../assets/skills/javascript_logo.svg";
+import reactLogo from "../../assets/skills/react-js-icon.svg";
+import tfLogo from "../../assets/skills/google-tensorflow-icon.svg";
+import cppLogo from "../../assets/skills/c-plus-plus-programming-language-icon.svg";
+import mysqlLogo from "../../assets/skills/mysql-icon.svg";
+import gitLogo from "../../assets/skills/git-icon.svg";
+import nodeLogo from "../../assets/skills/node-js-icon.svg";
+import firebaseLogo from "../../assets/skills/google-firebase-icon.svg";
+import tailwindLogo from "../../assets/skills/tailwind-css-icon.svg";
+import vscodeLogo from "../../assets/skills/visual-studio-code-icon.svg";
+import figmaLogo from "../../assets/skills/figma-icon.svg";
+
 const About = () => {
   return (
     <div id="about" className="about">
       <div className="about-title">
         <h1>About Me</h1>
-        <img src="src/assets/theme_pattern.svg" alt="" />
+        <img src={themePattern} alt="theme pattern" />
       </div>
       <div className="about-sections">
         <div className="about-left">
-          <img src="src/assets/about-pic.png" alt="about-me-image" />
+          <img src={aboutPic} alt="about-me-image" />
         </div>
         <div className="about-right">
           <div className="about-para">
@@ -36,72 +53,51 @@ const About = () => {
           </div>
           <div className="about-skills-grid">
             <div className="card">
-              <img src="src/assets/skills/python_logo.svg" alt="Python logo" />
+              <img src={pythonLogo} alt="Python logo" />
               <span>Python</span>
             </div>
             <div className="card">
-              <img
-                src="src/assets/skills/javascript_logo.svg"
-                alt="JavaScript logo"
-              />
+              <img src={jsLogo} alt="JavaScript logo" />
               <span>JavaScript</span>
             </div>
             <div className="card">
-              <img src="src/assets/skills/react-js-icon.svg" alt="React logo" />
+              <img src={reactLogo} alt="React logo" />
               <span>React</span>
             </div>
             <div className="card">
-              <img
-                src="src/assets/skills/google-tensorflow-icon.svg"
-                alt="TensorFlow logo"
-              />
+              <img src={tfLogo} alt="TensorFlow logo" />
               <span>TensorFlow</span>
             </div>
             <div className="card">
-              <img
-                src="src/assets/skills/c-plus-plus-programming-language-icon.svg"
-                alt="C/C++ logo"
-              />
+              <img src={cppLogo} alt="C/C++ logo" />
               <span>C/C++</span>
             </div>
             <div className="card">
-              <img src="src/assets/skills/mysql-icon.svg" alt="MySQL logo" />
+              <img src={mysqlLogo} alt="MySQL logo" />
               <span>MySQL</span>
             </div>
             <div className="card">
-              <img src="src/assets/skills/git-icon.svg" alt="Git logo" />
+              <img src={gitLogo} alt="Git logo" />
               <span>Git</span>
             </div>
             <div className="card">
-              <img
-                src="src/assets/skills/node-js-icon.svg"
-                alt="Node.js logo"
-              />
+              <img src={nodeLogo} alt="Node.js logo" />
               <span>Node.js</span>
             </div>
             <div className="card">
-              <img
-                src="src/assets/skills/google-firebase-icon.svg"
-                alt="Firebase logo"
-              />
+              <img src={firebaseLogo} alt="Firebase logo" />
               <span>Firebase</span>
             </div>
             <div className="card">
-              <img
-                src="src/assets/skills/tailwind-css-icon.svg"
-                alt="Tailwind CSS logo"
-              />
+              <img src={tailwindLogo} alt="Tailwind CSS logo" />
               <span>Tailwind CSS</span>
             </div>
             <div className="card">
-              <img
-                src="src/assets/skills/visual-studio-code-icon.svg"
-                alt="VS Code logo"
-              />
+              <img src={vscodeLogo} alt="VS Code logo" />
               <span>VS Code</span>
             </div>
             <div className="card">
-              <img src="src/assets/skills/figma-icon.svg" alt="Figma logo" />
+              <img src={figmaLogo} alt="Figma logo" />
               <span>Figma</span>
             </div>
           </div>
