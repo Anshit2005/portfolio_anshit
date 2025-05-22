@@ -96,3 +96,165 @@
     cursor: pointer;
     transition: 0.4s;
 }
+
+/* Responsive Media Queries for Projects */
+
+/* Tablet and smaller screens (up to 768px) */
+@media (max-width: 768px) {
+  .projects {
+    height: auto;
+    margin: 20px 15px;
+    gap: 25px;
+  }
+  
+  .projects-title h1 {
+    font-size: 36px;
+    padding: 0 15px;
+  }
+  
+  .projects-title img {
+    width: 100px;
+    right: 5px;
+    bottom: -10px;
+  }
+  
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr); /* TWO cards per row for tablets */
+    max-width: 100%;
+    padding: 0 10px;
+    gap: 20px;
+  }
+  
+  .projects-format {
+    max-width: 100%;
+    padding: 15px;
+    gap: 8px;
+    aspect-ratio: 1 / 1; /* Make cards roughly square */
+  }
+  
+  .projects-format h3 {
+    font-size: 14px;
+  }
+  
+  .projects-format h2 {
+    font-size: 20px;
+  }
+  
+  .projects-format p {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 100%;
+  }
+  
+  .projects-readmore {
+    font-size: 12px;
+  }
+  
+  .projects-readmore img {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* Mobile phones (up to 480px) */
+@media (max-width: 480px) {
+  .projects {
+    margin: 15px 10px;
+    gap: 20px;
+  }
+  
+  .projects-title h1 {
+    font-size: 28px;
+    padding: 0 10px;
+  }
+  
+  .projects-title img {
+    width: 80px;
+    right: 3px;
+    bottom: -8px;
+  }
+  
+  .projects-container {
+    grid-template-columns: 1fr; /* ONE card per row for mobile */
+    gap: 15px;
+    padding: 0 8px;
+  }
+  
+  .projects-format {
+    padding: 20px;
+    gap: 12px;
+    aspect-ratio: auto; /* Remove square constraint for better content display */
+    min-height: auto;
+  }
+  
+  .projects-format h3 {
+    font-size: 14px;
+  }
+  
+  .projects-format h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  
+  .projects-format p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 12px;
+  }
+  
+  .projects-readmore {
+    font-size: 14px;
+    margin-top: auto;
+  }
+  
+  .projects-readmore img {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* Extra small mobile phones (up to 360px) */
+@media (max-width: 360px) {
+  .projects {
+    margin: 10px 5px;
+    gap: 15px;
+  }
+  
+  .projects-title h1 {
+    font-size: 24px;
+    padding: 0 5px;
+  }
+  
+  .projects-container {
+    grid-template-columns: 1fr; /* ONE card per row */
+    gap: 12px;
+    padding: 0 5px;
+  }
+  
+  .projects-format {
+    padding: 16px;
+    gap: 10px;
+  }
+  
+  .projects-format h3 {
+    font-size: 12px;
+  }
+  
+  .projects-format h2 {
+    font-size: 20px;
+  }
+  
+  .projects-format p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .projects-readmore {
+    font-size: 12px;
+  }
+  
+  .projects-readmore img {
+    width: 12px;
+    height: 12px;
+  }
+}

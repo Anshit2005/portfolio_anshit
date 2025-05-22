@@ -56,6 +56,13 @@
   line-height: 27px;
 }
 
+.about-full {
+  display: block;
+}
+.about-brief {
+  display: none;
+}
+
 .about-skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
@@ -200,6 +207,11 @@
   .about-title h1 {
     font-size: 36px;
   }
+
+  .about-title img {
+    width: 150px;
+  }
+
   .about-sections {
     flex-direction: column;
     gap: 30px;
@@ -231,6 +243,11 @@
   .about-title h1 {
     font-size: 28px;
   }
+
+  .about-title img {
+    width: 100px;
+  }
+
   .about-left img {
     width: 200px;
   }
@@ -238,6 +255,14 @@
     font-size: 14px;
     line-height: 20px;
   }
+
+  .about-full {
+    display: none;
+  }
+  .about-brief {
+    display: block;
+  }
+
   .about-skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
     padding: 0.5rem;

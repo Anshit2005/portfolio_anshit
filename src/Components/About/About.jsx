@@ -31,7 +31,7 @@ const About = () => {
         </div>
         <div className="about-right">
           <div className="about-para">
-            <p>
+            <p className="about-full">
               I'm a B.Tech Computer Science and Engineering student at the
               Indian Institute of Technology Jodhpur, with a strong interest in
               Software Development and a growing passion for Artificial
@@ -39,7 +39,7 @@ const About = () => {
               technologies, build real-world projects, and deepen my
               understanding of how software can solve meaningful problems.
             </p>
-            <p>
+            <p className="about-full">
               I’ve completed relevant courses like Data Structures and
               Algorithms, Software Engineering, Machine Learning, Signals and
               Systems, and Quantum Information, which have built a strong
@@ -49,6 +49,9 @@ const About = () => {
               proficient in frameworks and libraries such as React, Tailwind
               CSS, Express.js, TensorFlow, OpenCV, and Qiskit, with hands-on
               exposure to full stack development and AI/ML projects.
+            </p>
+            <p class="about-brief">
+                I'm a B.Tech CSE student at IIT Jodhpur with a keen interest in software development and AI/ML. I’ve built strong skills in full stack and machine learning through hands-on projects using Python, JS, React, TensorFlow, and more.
             </p>
           </div>
           <div className="about-skills-grid">

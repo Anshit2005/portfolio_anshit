@@ -10,9 +10,7 @@
     transition: background-color 0.4s ease-in-out;
 }
 
-.footer-left,
-.footer-center,
-.footer-right {
+.footer-left, .footer-center, .footer-right {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -42,7 +40,113 @@
     color: #ffffff;
 }
 
-.footer-left span,
-.footer-center span {
+.footer-left span, .footer-center span {
     color: #A0A0A0;
+}
+
+/* Responsive Media Queries for Footer Section */
+
+/* Tablet and smaller screens (up to 768px) */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px 30px;
+        text-align: center;
+    }
+    
+    .footer-left, .footer-center, .footer-right {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .footer-center {
+        order: 1;
+        font-size: 16px;
+    }
+    
+    .footer-left {
+        order: 2;
+        font-size: 14px;
+    }
+    
+    .footer-right {
+        order: 3;
+        gap: 15px;
+    }
+    
+    .footer-right a {
+        font-size: 18px;
+        margin-left: 0;
+        margin: 0 8px;
+    }
+}
+
+/* Mobile phones (up to 480px) */
+@media (max-width: 480px) {
+    .footer {
+        padding: 20px 15px;
+        gap: 12px;
+        font-size: 16px;
+    }
+    
+    .footer-left, .footer-center, .footer-right {
+        gap: 8px;
+    }
+    
+    .footer-center {
+        font-size: 15px;
+    }
+    
+    .footer-left {
+        font-size: 13px;
+    }
+    
+    .footer-right {
+        gap: 12px;
+    }
+    
+    .footer-right a {
+        font-size: 16px;
+        margin: 0 6px;
+    }
+    
+    .footer-right a:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* Extra small mobile phones (up to 360px) */
+@media (max-width: 360px) {
+    .footer {
+        padding: 18px 12px;
+        gap: 10px;
+        font-size: 14px;
+    }
+    
+    .footer-left, .footer-center, .footer-right {
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+    
+    .footer-center {
+        font-size: 14px;
+    }
+    
+    .footer-left {
+        font-size: 12px;
+    }
+    
+    .footer-right {
+        gap: 10px;
+    }
+    
+    .footer-right a {
+        font-size: 14px;
+        margin: 0 4px;
+    }
+    
+    .footer-right a:hover {
+        transform: scale(1.05);
+    }
 }
