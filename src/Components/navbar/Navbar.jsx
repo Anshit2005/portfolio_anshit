@@ -1,11 +1,11 @@
-import React, { useState, useRef } from 'react';
-import './Navbar.css';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
+import React, { useState, useRef } from "react";
+import "./Navbar.css";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
-import themePattern from '../../assets/theme_pattern.svg';
-import menuOpenIcon from '../../assets/menu_open.svg';
-import menuCloseIcon from '../../assets/menu_close.svg';
-import underlineIcon from '../../assets/nav_underline.svg';
+import themePattern from "../../assets/theme_pattern.svg";
+import menuOpenIcon from "../../assets/menu_open.svg";
+import menuCloseIcon from "../../assets/menu_close.svg";
+import underlineIcon from "../../assets/nav_underline.svg";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -50,26 +50,26 @@ const Navbar = () => {
             className="nav-mob-close"
           />
           <li>
-            <AnchorLink className="anchor-link" offset={0} href="#">
-              <p onClick={() => setMenu("home")}>Home</p>
+            <AnchorLink className="anchor-link" offset={0} href="#home">
+              <p onClick={() => {setMenu("home") ; closeMenu();}}>Home</p>
             </AnchorLink>
             {menu === "home" && <img src={underlineIcon} alt="underline" />}
           </li>
           <li>
             <AnchorLink className="anchor-link" offset={0} href="#about">
-              <p onClick={() => setMenu("about")}>About Me</p>
+              <p onClick={() => {setMenu("about") ; closeMenu();}}>About Me</p>
             </AnchorLink>
             {menu === "about" && <img src={underlineIcon} alt="underline" />}
           </li>
           <li>
             <AnchorLink className="anchor-link" offset={0} href="#projects">
-              <p onClick={() => setMenu("projects")}>My Projects</p>
+              <p onClick={() => {setMenu("projects") ; closeMenu();}}>My Projects</p>
             </AnchorLink>
             {menu === "projects" && <img src={underlineIcon} alt="underline" />}
           </li>
           <li>
             <AnchorLink className="anchor-link" offset={50} href="#contact">
-              <p onClick={() => setMenu("contact")}>Contact Me</p>
+              <p onClick={() => {setMenu("contact") ; closeMenu();}}>Contact Me</p>
             </AnchorLink>
             {menu === "contact" && <img src={underlineIcon} alt="underline" />}
           </li>
