@@ -2,7 +2,6 @@ import React, { useState, useRef } from 'react';
 import './Navbar.css';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-// ✅ Importing assets correctly
 import themePattern from '../../assets/theme_pattern.svg';
 import menuOpenIcon from '../../assets/menu_open.svg';
 import menuCloseIcon from '../../assets/menu_close.svg';
@@ -15,11 +14,14 @@ const Navbar = () => {
 
   const openMenu = () => {
     setIsMenuOpen(true);
-    menuRef.current.style.right = "0px";
+    menuRef.current.style.position = "absolute";
+    menuRef.current.style.top = "0";
+    menuRef.current.style.right = "0";
   };
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+    menuRef.current.style.position = "absolute";
     menuRef.current.style.right = "-350px";
   };
 

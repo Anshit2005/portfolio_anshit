@@ -16,7 +16,7 @@ import nodeLogo from "../../assets/skills/node-js-icon.svg";
 import firebaseLogo from "../../assets/skills/google-firebase-icon.svg";
 import tailwindLogo from "../../assets/skills/tailwind-css-icon.svg";
 import vscodeLogo from "../../assets/skills/visual-studio-code-icon.svg";
-import figmaLogo from "../../assets/skills/figma-icon.svg";
+import htmlLogo from "../../assets/skills/html-icon.svg";
 
 const About = () => {
   return (
@@ -97,8 +97,8 @@ const About = () => {
               <span>VS Code</span>
             </div>
             <div className="card">
-              <img src={figmaLogo} alt="Figma logo" />
-              <span>Figma</span>
+              <img src={htmlLogo} alt="HTML logo" />
+              <span>HTML</span>
             </div>
           </div>
         </div>

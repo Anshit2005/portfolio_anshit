@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import profilePic from "../../assets/profile-pic2.png";  // ✅ Corrected path
+import profilePic from "../../assets/profile-pic2.png"; 
 
 const Hero = () => {
   return (
