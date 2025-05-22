@@ -241,11 +241,13 @@
     margin: 20px 15px;
   }
   .about-title h1 {
-    font-size: 28px;
+    font-size: 40px;
+    text-align: center;
   }
 
   .about-title img {
     width: 100px;
+    height: auto;
   }
 
   .about-left img {
