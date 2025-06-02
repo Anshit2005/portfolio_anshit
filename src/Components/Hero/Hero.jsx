@@ -7,7 +7,7 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={profilePic} alt="profile pic" />
       <h1>
-        <span>I'm Anshit Agarwal,</span> a Software Development Enthusiast from India
+        <span>I'm Anshit Agarwal,</span> a Software Development and Machine Learning Enthusiast from India
       </h1>
       <p>
         B.Tech Computer Science and Engineering student at the Indian Institute of Technology Jodhpur,
