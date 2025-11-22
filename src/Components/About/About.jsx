@@ -32,7 +32,7 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p className="about-full">
-              I'm a B.Tech Computer Science and Engineering student at the
+              I'm a third-year B.Tech Computer Science and Engineering student at the
               Indian Institute of Technology Jodhpur, with a strong interest in
               Software Development and a growing passion for Artificial
               Intelligence and Machine Learning. I'm always eager to learn new
@@ -40,18 +40,18 @@ const About = () => {
               understanding of how software can solve meaningful problems.
             </p>
             <p className="about-full">
-              I’ve completed relevant courses like Data Structures and
-              Algorithms, Software Engineering, Machine Learning, Signals and
-              Systems, and Quantum Information, which have built a strong
-              foundation in core CS concepts. My technical skills include C/C++,
-              Python, JavaScript, and SQL, with experience in tools like Git, VS
-              Code, Arduino IDE, and platforms like Firebase and Vercel. I’m
-              proficient in frameworks and libraries such as React, Tailwind
-              CSS, Express.js, TensorFlow, OpenCV, and Qiskit, with hands-on
-              exposure to full stack development and AI/ML projects.
+              I've completed core CS courses such as Operating Systems, Computer
+              Organization and Architecture, Database Systems, and Design and Analysis of Algorithms which have
+              strengthened my systems and software design foundations. My
+              technical skills include C/C++, Python, JavaScript, and SQL, with
+              experience in tools like Git, VS Code, Arduino IDE, and platforms
+              like Firebase and Vercel. I’m proficient in frameworks and libraries
+              such as React, Tailwind CSS, Express.js, TensorFlow, OpenCV, and
+              Qiskit, with hands-on exposure to full stack development and AI/ML projects.
             </p>
-            <p class="about-brief">
-                I'm a B.Tech CSE student at IIT Jodhpur with a keen interest in software development and AI/ML. I’ve built strong skills in full stack and machine learning through hands-on projects using Python, JS, React, TensorFlow, and more.
+            <p className="about-brief">
+              I’ve completed several course projects that taught me how to design
+              and implement clean, reliable software solutions.
             </p>
           </div>
           <div className="about-skills-grid">
