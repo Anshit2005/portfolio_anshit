@@ -23,7 +23,7 @@ const Hero = () => {
           My Github
         </a>
         <a
-          href="https://drive.google.com/file/d/1TSOIb2Gxuc92ihUn_mQqZt-75bu1yfm3/view?usp=sharing"
+          href="https://drive.google.com/file/d/1nMD5Jl68LS_J3wB1Ici1aErV2md7-lXb/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="hero-resume"
